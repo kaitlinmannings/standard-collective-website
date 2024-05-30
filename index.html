@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Standard Collective</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="The Standard Collective - Freelance technical writing, content writing, copywriting, and editing services in San Antonio, TX.">
+    <meta name="keywords" content="Technical Writing, Content Writing, Copywriting, Editing, San Antonio, The Standard Collective">
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-item">File</div>
+        <div class="menu-item">Edit</div>
+        <div class="menu-item">View</div>
+        <div class="menu-item">Special</div>
+        <div class="menu-item">Help</div>
+    </div>
+    <div class="desktop">
+        <div class="icon">
+            <img src="folder-icon.png" alt="Folder">
+            <p>Portfolio</p>
+        </div>
+        <div class="icon">
+            <img src="file-icon.png" alt="File">
+            <p>Services</p>
+        </div>
+        <div class="icon">
+            <img src="info-icon.png" alt="Info">
+            <p>About</p>
+        </div>
+        <div class="icon">
+            <img src="contact-icon.png" alt="Contact">
+            <p>Contact</p>
+        </div>
+        <div class="icon">
+            <img src="blog-icon.png" alt="Blog">
+            <p>Blog</p>
+        </div>
+    </div>
+    <div class="window" id="about-window">
+        <div class="title-bar">
+            <span class="title">About</span>
+            <span class="close-btn" onclick="closeWindow('about-window')">X</span>
+        </div>
+        <div class="window-content">
+            <p>Welcome to The Standard Collective! We specialize in freelance technical writing, content writing, copywriting, and editing. Based in San Antonio, TX, we are your go-to source for professional documentation and content creation. Our goal is to help you communicate effectively and efficiently. Let's work together to bring your ideas to life!</p>
+        </div>
+    </div>
+    <div class="window" id="services-window">
+        <div class="title-bar">
+            <span class="title">Services</span>
+            <span class="close-btn" onclick="closeWindow('services-window')">X</span>
+        </div>
+        <div class="window-content">
+            <ul>
+                <li>Technical Writing</li>
+                <li>Content Writing</li>
+                <li>Copywriting</li>
+                <li>Editing</li>
+                <li>Information Architecture</li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

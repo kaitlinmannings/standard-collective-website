@@ -1,0 +1,64 @@
+body {
+    background-color: #C3C7C9;
+    font-family: "Geneva", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar {
+    display: flex;
+    background-color: #E5E5E5;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.menu-item {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.desktop {
+    padding: 20px;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.window {
+    width: 300px;
+    border: 2px solid #000;
+    margin: 20px;
+    background-color: #FFF;
+    position: absolute;
+    display: none;
+}
+
+.title-bar {
+    background-color: #C3C7C9;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.close-btn {
+    background-color: #FF0000;
+    color: #FFF;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.window-content {
+    padding: 10px;
+}
