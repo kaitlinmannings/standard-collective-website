@@ -3,6 +3,9 @@ body {
     font-family: "Geneva", sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-bar {
@@ -10,6 +13,8 @@ body {
     background-color: #E5E5E5;
     padding: 5px;
     border-bottom: 1px solid #000;
+    width: 100%;
+    justify-content: center;
 }
 
 .menu-item {
@@ -22,21 +27,25 @@ body {
     margin: 20px 0;
 }
 
-.header h1 {
-    font-size: 36px;
+.header h1, .header .subhead {
     margin: 0;
     padding: 0;
 }
 
+.header h1 {
+    font-size: 36px;
+}
+
 .header .subhead {
     font-size: 18px;
-    margin: 0;
-    padding: 0;
     color: #555;
 }
 
 .desktop {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .icon {
