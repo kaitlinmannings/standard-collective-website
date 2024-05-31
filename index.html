@@ -7,76 +7,64 @@
     <meta name="description" content="The Standard Collective - Freelance technical writing, content writing, copywriting, and editing services in San Antonio, TX.">
     <meta name="keywords" content="Technical Writing, Content Writing, Copywriting, Editing, San Antonio, The Standard Collective">
     <link rel="stylesheet" href="styles.css">
-    <meta property="og:title" content="The Standard Collective">
-    <meta property="og:description" content="Freelance technical writing, content writing, copywriting, and editing services in San Antonio, TX.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com">
-    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Standard Collective">
-    <meta name="twitter:description" content="Freelance technical writing, content writing, copywriting, and editing services in San Antonio, TX.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
 </head>
 <body>
     <div class="menu-bar">
-        <div class="menu-item">File</div>
-        <div class="menu-item">Edit</div>
-        <div class="menu-item">View</div>
-        <div class="menu-item">Special</div>
-        <div class="menu-item">Help</div>
+        <button class="menu-item" onclick="showMenu('file-menu')">File</button>
+        <button class="menu-item" onclick="showMenu('edit-menu')">Edit</button>
+        <button class="menu-item" onclick="showMenu('view-menu')">View</button>
+        <button class="menu-item" onclick="showMenu('special-menu')">Special</button>
+        <button class="menu-item" onclick="showMenu('help-menu')">Help</button>
     </div>
     <div class="header">
         <h1>The Standard Collective</h1>
         <p class="subhead">Rewrite the standard</p>
+        <button class="retro-button">Request a Quote</button>
     </div>
     <div class="desktop">
-        <div class="icon">
-            <img src="images/folder-icon.png" alt="Portfolio icon - Technical Writing Portfolio">
-            <p>Portfolio</p>
-        </div>
-        <div class="icon">
-            <img src="images/file-icon.png" alt="File">
-            <p>Services</p>
-        </div>
-        <div class="icon">
-            <img src="images/info-icon.png" alt="Info">
-            <p>About</p>
-        </div>
-        <div class="icon">
-            <img src="images/contact-icon.png" alt="Contact">
-            <p>Contact</p>
-        </div>
-        <div class="icon">
-            <img src="images/blog-icon.png" alt="Blog">
-            <p>Blog</p>
-        </div>
-    </div>
-    <div class="window" id="about-window">
-        <div class="title-bar">
-            <span class="title">About</span>
-            <span class="close-btn" onclick="closeWindow('about-window')">X</span>
-        </div>
-        <div class="window-content">
+        <section id="about">
+            <h2>About Us</h2>
             <p>Welcome to The Standard Collective! We specialize in freelance technical writing, content writing, copywriting, and editing. Based in San Antonio, TX, we are your go-to source for professional documentation and content creation. Our goal is to help you communicate effectively and efficiently. Let's work together to bring your ideas to life!</p>
-        </div>
-    </div>
-    <div class="window" id="services-window">
-        <div class="title-bar">
-            <span class="title">Services</span>
-            <span class="close-btn" onclick="closeWindow('services-window')">X</span>
-        </div>
-        <div class="window-content">
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
             <ul>
-                <li>Technical Writing</li>
-                <li>Content Writing</li>
-                <li>Copywriting</li>
-                <li>Editing</li>
-                <li>Information Architecture</li>
+                <li><strong>Technical Writing:</strong> Creating clear and concise documentation for technical processes.</li>
+                <li><strong>Content Writing:</strong> Crafting engaging content for blogs, websites, and social media.</li>
+                <li><strong>Copywriting:</strong> Writing persuasive copy to boost your marketing efforts.</li>
+                <li><strong>Editing:</strong> Ensuring your documents are error-free and polished.</li>
+                <li><strong>Information Architecture:</strong> Organizing and structuring content for optimal user experience.</li>
             </ul>
-        </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Check out some of our recent projects:</p>
+            <ul>
+                <li><a href="https://github.com/kaitlinmannings/standard-collective-website">Project 1</a></li>
+                <li><a href="https://github.com/kaitlinmannings/standard-collective-website">Project 2</a></li>
+                <li><a href="https://github.com/kaitlinmannings/standard-collective-website">Project 3</a></li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <p>Here's what our clients are saying:</p>
+            <blockquote>"The Standard Collective provided exceptional service and delivered high-quality documentation for our project."</blockquote>
+            <blockquote>"Their content writing skills are top-notch. Highly recommended!"</blockquote>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@standardcollective.com">info@standardcollective.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://twitter.com/yourprofile">Twitter</a></li>
+                <li><a href="https://facebook.com/yourprofile">Facebook</a></li>
+                <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+            </ul>
+        </section>
     </div>
     <div class="footer">
-        <button class="retro-button">Request a Quote</button>
+        <p>&copy; 2024 The Standard Collective. All rights reserved.</p>
     </div>
     <script src="scripts.js"></script>
 </body>
