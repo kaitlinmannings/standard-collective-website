@@ -19,7 +19,10 @@
     <div class="header">
         <h1>The Standard Collective</h1>
         <p class="subhead">Rewrite the standard</p>
-        <button class="retro-button">Request a Quote</button>
+        <button class="retro-button" onclick="window.location.href='https://github.com/kaitlinmannings/Portfolio'">Portfolio</button>
+        <button class="retro-button" onclick="openWindow('services-window')">Services</button>
+        <button class="retro-button" onclick="openWindow('about-window')">About</button>
+        <button class="retro-button" onclick="window.location.href='blog.html'">Blog</button>
     </div>
     <div class="desktop">
         <section id="about">
@@ -40,9 +43,9 @@
             <h2>Portfolio</h2>
             <p>Check out some of our recent projects:</p>
             <ul>
-                <li><a href="https://github.com/kaitlinmannings/standard-collective-website">Project 1</a></li>
-                <li><a href="https://github.com/kaitlinmannings/standard-collective-website">Project 2</a></li>
-                <li><a href="https://github.com/kaitlinmannings/standard-collective-website">Project 3</a></li>
+                <li><a href="https://github.com/kaitlinmannings/Portfolio">Project 1</a></li>
+                <li><a href="https://github.com/kaitlinmannings/Portfolio">Project 2</a></li>
+                <li><a href="https://github.com/kaitlinmannings/Portfolio">Project 3</a></li>
             </ul>
         </section>
         <section id="testimonials">
@@ -63,8 +66,32 @@
             </ul>
         </section>
     </div>
+    <div class="window" id="about-window">
+        <div class="title-bar">
+            <span class="title">About</span>
+            <span class="close-btn" onclick="closeWindow('about-window')">X</span>
+        </div>
+        <div class="window-content">
+            <p>Welcome to The Standard Collective! We specialize in freelance technical writing, content writing, copywriting, and editing. Based in San Antonio, TX, we are your go-to source for professional documentation and content creation. Our goal is to help you communicate effectively and efficiently. Let's work together to bring your ideas to life!</p>
+        </div>
+    </div>
+    <div class="window" id="services-window">
+        <div class="title-bar">
+            <span class="title">Services</span>
+            <span class="close-btn" onclick="closeWindow('services-window')">X</span>
+        </div>
+        <div class="window-content">
+            <ul>
+                <li>Technical Writing</li>
+                <li>Content Writing</li>
+                <li>Copywriting</li>
+                <li>Editing</li>
+                <li>Information Architecture</li>
+            </ul>
+        </div>
+    </div>
     <div class="footer">
-        <p>&copy; 2024 The Standard Collective. All rights reserved.</p>
+        <button class="retro-button" onclick="window.location.href='contact.html'">Request a Quote</button>
     </div>
     <script src="scripts.js"></script>
 </body>
